@@ -1,0 +1,32 @@
+/* Apply styles to the entire table */
+table {
+  border-collapse: collapse; /* Use collapse instead of separate */
+  width: 80%; /* Set the overall width of the table */
+  margin: 0 auto; /* Center the table within its container */
+}
+
+/* Style for each table row */
+tr {
+  display: block; /* Use display block to enable border-radius */
+  border-bottom: 1px solid #ddd; /* Add a bottom border to separate rows */
+  border-radius: 10px; /* Add rounded border to tr elements */
+  background-color: #f0f0f0; /* Set a background color for even rows */
+  margin-top: 10px; /* Add spacing between rows */
+}
+
+/* Apply styles to table header cells and data cells */
+th, td {
+  width: 150px; /* Set a fixed width for each cell */
+  padding: 10px; /* Add padding to cells */
+  text-align: left; /* Align text to the left within cells */
+}
+
+/* Apply different background color to odd rows */
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+/* Highlight row on hover */
+tr:hover {
+  background-color: #D6EEEE;
+}
